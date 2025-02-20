@@ -1,16 +1,10 @@
-// const p1 = new Promise((resolve, reject) => {
-//   reject("p1 is rejected");
-// });
+const obj = {
+  firstName: "yashu",
+  lastName: "Verma",
+  email: "yashu@gmail.com",
+  password: "yashu123",
+};
 
-const p2 = new Promise((resolve, reject) => {
-  setTimeout(() => resolve("p2 sucess"), 5000);
-});
+const { firstName, lastName, email, password } = obj;
 
-const p3 = new Promise((resolve, reject) => {
-  setTimeout(() => resolve("p3 success"), 2000);
-});
-
-p2.then((res) => console.log(res));
-console.log("1");
-
-console.log("2");
+console.log(firstName, lastName, email, password);
